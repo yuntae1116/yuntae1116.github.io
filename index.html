@@ -16,7 +16,7 @@
             align-items: center;
             margin-bottom: 40px;
         }
-        img {
+        img.profile-photo {
             width: 180px;
             height: 180px;
             border-radius: 50%;
@@ -48,12 +48,68 @@
         .section {
             margin-top: 40px;
         }
+
+        /* Publication Card */
+        .publication {
+            display: flex;
+            gap: 25px;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fafafa;
+        }
+        .pub-figure img {
+            width: 260px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            object-fit: cover;
+        }
+        .pub-content h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .pub-meta {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .pub-abstract {
+            font-size: 15px;
+            line-height: 1.55;
+        }
+        .pub-buttons {
+            margin-top: 12px;
+        }
+        .pub-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 7px 12px;
+            border: 1px solid #333;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+        }
+        .pub-buttons a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        /* Mobile friendly */
+        @media (max-width: 700px) {
+            body { padding: 22px; }
+            .profile-container { flex-direction: column; align-items: flex-start; }
+            img.profile-photo { margin-right: 0; margin-bottom: 18px; }
+            .publication { flex-direction: column; }
+            .pub-figure img { width: 100%; max-width: 520px; }
+        }
     </style>
 </head>
 <body>
 
     <div class="profile-container">
-        <img src="profile.jpg" alt="Profile Photo">
+        <img class="profile-photo" src="profile.jpg" alt="Profile Photo">
 
         <div>
             <h1>Yuntae Ju</h1>
@@ -98,6 +154,42 @@
         evidence-based decision-making while carefully distinguishing
         <strong>prediction from causal inference</strong>.
         </p>
+    </div>
+
+    <div class="section">
+        <h2>Representative Publication</h2>
+
+        <div class="publication">
+            <div class="pub-figure">
+                <!-- Replace this with your actual figure file -->
+                <img src="kbo_clustering_figure.png" alt="KBO Pitcher Clustering Figure">
+            </div>
+
+            <div class="pub-content">
+                <h3>Clustering Rookie Korean Baseball Pitchers and Predicting Potential Using Machine Learning</h3>
+
+                <div class="pub-meta">
+                    Yuntae Ju, et al. <br>
+                    Journal of Coaching Development (KCI), 2023
+                </div>
+
+                <div class="pub-abstract">
+                    This study evaluates the latent potential of rookie pitchers in the Korea Baseball Organization
+                    (KBO) by identifying pitcher archetypes using K-means clustering and examining their association
+                    with early-career performance (WAR). Using debut-season physical and performance indicators,
+                    we show that high-velocity pitcher types contribute most substantially to team success.
+                    A positive correlation between fastball velocity and WAR further suggests that pitching velocity
+                    is a key signal for draft evaluation, highlighting the value of ML-based clustering for talent
+                    identification in professional baseball.
+                </div>
+
+                <div class="pub-buttons">
+                    <!-- Optional buttons: replace links if you have PDFs or DOI pages -->
+                    <a href="#" target="_blank">Paper (PDF)</a>
+                    <a href="#" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
