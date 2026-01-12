@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Yuntae Ju</title>
     <style>
         body {
@@ -96,11 +97,11 @@
 
         <div>
             <h1>Yuntae Ju</h1>
-            <p class="subtitle">Statistical Machine Learning for Human Performance & Population Health</p>
+            <p class="subtitle">Statistical Machine Learning for Human Performance &amp; Population Health</p>
 
             <div class="links">
-                <a href="https://scholar.google.com/citations?hl=en&user=ABHRcfkAAAAJ" target="_blank">Google Scholar</a>
-                <a href="Yuntae_Ju_CV.pdf" target="_blank">CV</a>
+                <a href="https://scholar.google.com/citations?hl=en&user=ABHRcfkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+                <a href="Yuntae_Ju_CV.pdf" target="_blank" rel="noopener">CV</a>
             </div>
         </div>
     </div>
@@ -142,9 +143,38 @@
     <div class="section">
         <h2>Representative Publication</h2>
 
+        <!-- 2026 Scientific Reports (top) -->
         <div class="publication">
             <div class="pub-figure">
-                <!-- Local image file: place in the same directory as this HTML -->
+                <img src="swimming_aging_curve.png"
+                     alt="Age-performance curve in elite men's 100m freestyle derived from longitudinal mixed-effects modeling">
+            </div>
+
+            <div class="pub-content">
+                <h3>Performance Modeling for Men’s 100m Freestyle: An Artificial Intelligence and Longitudinal Analysis Approach</h3>
+
+                <div class="pub-meta">
+                    Ju, Y., Oh, M., Lee, J., Kim, Y., Jang, S. J., Yoo, J., Park, K.-N., Kim, Y., Ryoo, H., Kim, D.-H., &amp; Suh, S.-H. <br>
+                    <em>Scientific Reports</em>, 2026
+                </div>
+
+                <div class="pub-abstract">
+                    This study examined elite men’s 100m freestyle performance using an integrated framework combining
+                    artificial intelligence (AI), explainable AI (XAI), and longitudinal mixed-effects modeling.
+                    Competition records were analyzed with ensemble-based machine learning models trained using athlete-level
+                    grouped cross-validation and bootstrap resampling, achieving strong predictive accuracy.
+                    SHAP-based interpretation identified athlete age as the most influential predictor, followed by national
+                    economic context, while longitudinal mixed-effects modeling revealed a U-shaped age–performance trajectory
+                    with peak performance at approximately 23.7 years (95% CI shown in the figure).
+                    Collectively, the framework demonstrates how prediction, interpretability, and longitudinal modeling can be
+                    jointly leveraged for robust and transparent performance evaluation in elite sport.
+                </div>
+            </div>
+        </div>
+
+        <!-- 2023 KBO paper (second) -->
+        <div class="publication">
+            <div class="pub-figure">
                 <img src="kbo_pitcher_correlation.png"
                      alt="Correlation matrix of height, body mass, fastball velocity, and WAR in KBO rookie pitchers">
             </div>
@@ -168,6 +198,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 </body>
