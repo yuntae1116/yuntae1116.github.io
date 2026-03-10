@@ -1,266 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yuntae Ju | Statistical Machine Learning for Longitudinal Biomedical Data</title>
-    <meta name="description" content="Yuntae Ju | Statistical machine learning for longitudinal biomedical data, interpretable AI, anti-doping analytics, metabolomics, EEG, and hierarchical modeling." />
-    <meta name="keywords" content="Yuntae Ju, biomedical data science, biostatistics, statistical machine learning, longitudinal data, hierarchical modeling, interpretable AI, anti-doping, metabolomics, LC-MS, GC-MS, EEG, physiological data, anomaly detection" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px;
-            line-height: 1.65;
-            color: #222;
-        }
+<title>Yuntae Ju | Statistical Machine Learning for Longitudinal Data</title>
 
-        .profile-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 40px;
-        }
+<meta name="description"
+content="Yuntae Ju | Statistical machine learning, longitudinal modeling, hierarchical data analysis, interpretable AI, and anomaly detection.">
 
-        img.profile-photo {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            margin-right: 35px;
-            object-fit: cover;
-            border: 2px solid #ddd;
-        }
+<meta name="keywords"
+content="Yuntae Ju, statistical machine learning, biostatistics, longitudinal modeling, hierarchical modeling, interpretable AI, anomaly detection, biomedical data science">
 
-        h1 {
-            margin-bottom: 6px;
-            font-size: 34px;
-        }
+<style>
 
-        .subtitle {
-            color: #555;
-            margin-top: 0;
-            margin-bottom: 18px;
-            font-size: 18px;
-        }
+body{
+font-family: Arial, sans-serif;
+max-width:950px;
+margin:0 auto;
+padding:40px;
+line-height:1.7;
+color:#222;
+}
 
-        .links a {
-            display: inline-block;
-            margin-right: 12px;
-            margin-bottom: 10px;
-            padding: 8px 14px;
-            border: 1px solid #333;
-            text-decoration: none;
-            color: #333;
-            border-radius: 6px;
-            font-size: 15px;
-            transition: all 0.2s ease;
-        }
+.profile-container{
+display:flex;
+align-items:center;
+gap:35px;
+margin-bottom:45px;
+}
 
-        .links a:hover {
-            background-color: #333;
-            color: white;
-        }
+.profile-photo{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:2px solid #ddd;
+}
 
-        .section {
-            margin-top: 44px;
-        }
+h1{
+margin:0;
+font-size:34px;
+}
 
-        .section h2 {
-            margin-bottom: 16px;
-            font-size: 26px;
-        }
+.subtitle{
+color:#555;
+margin-top:6px;
+margin-bottom:18px;
+font-size:18px;
+}
 
-        .keywords {
-            margin-top: 14px;
-            color: #555;
-            font-size: 15px;
-        }
+.links a{
+display:inline-block;
+margin-right:10px;
+margin-bottom:10px;
+padding:8px 14px;
+border:1px solid #333;
+text-decoration:none;
+color:#333;
+border-radius:6px;
+font-size:15px;
+transition:0.2s;
+}
 
-        .publication {
-            display: flex;
-            gap: 25px;
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fafafa;
-        }
+.links a:hover{
+background:#333;
+color:white;
+}
 
-        .pub-figure img {
-            width: 260px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            object-fit: cover;
-        }
+.keywords{
+font-size:15px;
+color:#555;
+margin-top:10px;
+}
 
-        .pub-content h3 {
-            margin-top: 0;
-            margin-bottom: 8px;
-            font-size: 21px;
-        }
+.section{
+margin-top:45px;
+}
 
-        .pub-meta {
-            font-size: 14px;
-            color: #555;
-            margin-bottom: 12px;
-        }
+.section h2{
+font-size:26px;
+margin-bottom:16px;
+}
 
-        .pub-abstract {
-            font-size: 15px;
-            line-height: 1.58;
-        }
+.section p{
+margin-bottom:16px;
+}
 
-        @media (max-width: 700px) {
-            body {
-                padding: 22px;
-            }
+.publication{
+display:flex;
+gap:25px;
+margin-top:20px;
+padding:20px;
+border:1px solid #ddd;
+border-radius:10px;
+background:#fafafa;
+}
 
-            .profile-container {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+.pub-figure{
+width:270px;
+height:180px;
+border:1px solid #ccc;
+border-radius:8px;
+overflow:hidden;
+background:white;
+display:flex;
+align-items:center;
+justify-content:center;
+}
 
-            img.profile-photo {
-                margin-right: 0;
-                margin-bottom: 18px;
-            }
+.pub-figure img{
+width:100%;
+height:100%;
+object-fit:contain;
+}
 
-            .publication {
-                flex-direction: column;
-            }
+.pub-content{
+flex:1;
+}
 
-            .pub-figure img {
-                width: 100%;
-                max-width: 520px;
-            }
-        }
-    </style>
+.pub-content h3{
+margin-top:0;
+margin-bottom:8px;
+font-size:21px;
+}
+
+.pub-meta{
+font-size:14px;
+color:#555;
+margin-bottom:12px;
+}
+
+.pub-abstract{
+font-size:15px;
+line-height:1.6;
+}
+
+@media (max-width:720px){
+
+.profile-container{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.publication{
+flex-direction:column;
+}
+
+.pub-figure{
+width:100%;
+height:220px;
+}
+
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="profile-container">
-        <img class="profile-photo" src="profile.jpg" alt="Profile Photo" />
+<div class="profile-container">
 
-        <div>
-            <h1>Yuntae Ju</h1>
-            <p class="subtitle">Statistical Machine Learning for Longitudinal Biomedical Data</p>
+<img src="profile.jpg" class="profile-photo">
 
-            <div class="links">
-                <a href="https://scholar.google.com/citations?hl=en&user=ABHRcfkAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-                <a href="Yuntae_Ju_CV.pdf" target="_blank" rel="noopener">CV</a>
-            </div>
+<div>
 
-            <div class="keywords">
-                Keywords: longitudinal modeling, hierarchical data, interpretable machine learning,
-                anti-doping analytics, metabolomics, EEG, anomaly detection, biomedical data science
-            </div>
-        </div>
-    </div>
+<h1>Yuntae Ju</h1>
 
-    <div class="section">
-        <h2>About Me</h2>
+<p class="subtitle">
+Statistical Machine Learning for Longitudinal Data
+</p>
 
-        <p>
-            Hello, my name is <strong>Yuntae Ju</strong>. My research lies at the intersection of
-            <strong>statistical machine learning, physiological data analysis, and biomedical data science</strong>.
-            I develop <strong>interpretable and well-validated modeling frameworks for longitudinal and hierarchical data</strong>,
-            with particular interest in abnormal pattern detection in complex biological and behavioral systems.
-        </p>
+<div class="links">
 
-        <p>
-            My research trajectory began in <strong>exercise physiology and anti-doping science</strong>.
-            In the course of this work, I became interested in biochemical and physiological measurements,
-            especially <strong>metabolite profiling using LC&ndash;MS and GC&ndash;MS</strong>, as well as physiological signals such as
-            <strong>EEG</strong>. Working with these data made me increasingly interested in how biological signals evolve over time,
-            how normal adaptation differs from atypical deviation, and how such patterns can be modeled more rigorously.
-        </p>
+<a href="https://scholar.google.com/citations?hl=en&user=ABHRcfkAAAAJ" target="_blank">Google Scholar</a>
 
-        <p>
-            This background led me toward <strong>machine learning and statistical modeling for repeated-measures data</strong>.
-            I am particularly interested in longitudinal prediction, hierarchical and mixed-effects modeling,
-            anomaly detection, and uncertainty-aware inference. A central emphasis of my work is on combining
-            <strong>flexible machine learning methods with statistically principled validation strategies</strong>,
-            including grouped cross-validation, resampling-based inference, and interpretable model evaluation.
-        </p>
+<a href="Yuntae_Ju_CV.pdf" target="_blank">CV</a>
 
-        <p>
-            Much of my applied research uses <strong>athlete monitoring and anti-doping datasets as a testbed for methodological development</strong>.
-            In this setting, I study performance trajectories, physiological variability, and abnormal deviations
-            using integrated machine learning and longitudinal statistical frameworks. While my empirical work has often
-            originated in sport and human performance, my broader interests extend to
-            <strong>biomedical signal modeling, population health monitoring, and high-stakes decision systems</strong>.
-        </p>
+</div>
 
-        <p>
-            My long-term goal is to develop <strong>statistically rigorous and interpretable computational frameworks</strong>
-            for complex biomedical data, especially systems characterized by temporal dependence, heterogeneous populations,
-            and repeated observations. I am particularly motivated by problems where reliable pattern detection matters,
-            and where it is essential to distinguish <strong>predictive modeling from causal inference</strong>.
-        </p>
-    </div>
+<div class="keywords">
+Keywords: statistical machine learning, longitudinal modeling,
+hierarchical data analysis, interpretable AI, anomaly detection
+</div>
 
-    <div class="section">
-        <h2>Representative Publications</h2>
+</div>
+</div>
 
-        <div class="publication">
-            <div class="pub-figure">
-                <img
-                    src="swimming_aging_curve.png"
-                    alt="Age-performance curve in elite men's 100m freestyle derived from longitudinal mixed-effects modeling"
-                />
-            </div>
 
-            <div class="pub-content">
-                <h3>Performance Modeling for Men’s 100m Freestyle: An Artificial Intelligence and Longitudinal Analysis Approach</h3>
+<div class="section">
 
-                <div class="pub-meta">
-                    Ju, Y., Oh, M., Lee, J., Kim, Y., Jang, S. J., Yoo, J., Park, K.-N., Kim, Y., Ryoo, H., Kim, D.-H., &amp; Suh, S.-H. <br />
-                    <em>Scientific Reports</em>, 2026
-                </div>
+<h2>About Me</h2>
 
-                <div class="pub-abstract">
-                    This study examined elite men’s 100m freestyle performance using an integrated framework
-                    combining artificial intelligence, explainable AI, and longitudinal mixed-effects modeling.
-                    Competition records were analyzed with ensemble-based machine learning models trained using
-                    athlete-level grouped cross-validation and bootstrap resampling, achieving strong predictive performance.
-                    SHAP-based interpretation identified athlete age as the most influential predictor, followed by national
-                    economic context, while longitudinal mixed-effects modeling revealed a U-shaped age&ndash;performance trajectory
-                    with peak performance at 23.7 years. Collectively, the study demonstrates how prediction,
-                    interpretability, and longitudinal modeling can be jointly leveraged for robust evaluation
-                    of repeated-measures observational data.
-                </div>
-            </div>
-        </div>
+<p>
+Hello, my name is <strong>Yuntae Ju</strong>. My research focuses on
+<strong>statistical machine learning and longitudinal data analysis</strong>.
+I study how complex systems evolve over time and how abnormal patterns
+can be identified within repeated observations.
+</p>
 
-        <div class="publication">
-            <div class="pub-figure">
-                <img
-                    src="kbo_pitcher_correlation.png"
-                    alt="Correlation matrix of height, body mass, fastball velocity, and WAR in KBO rookie pitchers"
-                />
-            </div>
+<p>
+My work emphasizes the development of
+<strong>interpretable and statistically rigorous modeling frameworks</strong>
+for hierarchical and longitudinal datasets.
+This includes combining modern machine learning methods with
+robust validation strategies and statistical modeling approaches.
+</p>
 
-            <div class="pub-content">
-                <h3>Clustering Rookie Korean Baseball Pitchers and Predicting Potential Using Machine Learning</h3>
+<p>
+I am particularly interested in problems involving
+<strong>temporal dependence, heterogeneous populations, and repeated measurements</strong>.
+My goal is to develop computational methods that enable reliable
+pattern detection and prediction in complex observational data.
+</p>
 
-                <div class="pub-meta">
-                    Ju, Y., Ryoo, H.-J., &amp; Suh, S.-H. <br />
-                    <em>Journal of Coaching Development</em>, 2023
-                </div>
+</div>
 
-                <div class="pub-abstract">
-                    This study evaluates the latent potential of rookie pitchers in the Korea Baseball Organization
-                    by identifying pitcher archetypes using K-means clustering and examining their association with
-                    early-career performance. Using debut-season physical and performance indicators, the analysis shows
-                    that high-velocity pitcher profiles contribute most substantially to team success.
-                    A positive correlation between fastball velocity and WAR further suggests that pitching velocity
-                    serves as an important signal for draft evaluation, highlighting the value of machine learning-based
-                    analysis for talent identification in professional baseball.
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="section">
+
+<h2>Representative Publications</h2>
+
+
+<div class="publication">
+
+<div class="pub-figure">
+
+<img src="swimming_aging_curve.png">
+
+</div>
+
+<div class="pub-content">
+
+<h3>
+Performance Modeling for Men’s 100m Freestyle:
+An Artificial Intelligence and Longitudinal Analysis Approach
+</h3>
+
+<div class="pub-meta">
+
+Ju, Y., Oh, M., Lee, J., Kim, Y., Jang, S. J., Yoo, J.,
+Park, K.-N., Kim, Y., Ryoo, H., Kim, D.-H., & Suh, S.-H. <br>
+
+<em>Scientific Reports</em>, 2026
+
+</div>
+
+<div class="pub-abstract">
+
+This study analyzes elite men’s 100m freestyle performance using
+a framework that integrates machine learning and longitudinal modeling.
+Predictive models were evaluated using grouped cross-validation
+and resampling-based validation. Model interpretation revealed
+key predictors of performance and the longitudinal analysis
+identified a peak performance age around the mid-twenties.
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="publication">
+
+<div class="pub-figure">
+
+<img src="kbo_pitcher_correlation.png">
+
+</div>
+
+<div class="pub-content">
+
+<h3>
+Clustering Rookie Korean Baseball Pitchers and
+Predicting Potential Using Machine Learning
+</h3>
+
+<div class="pub-meta">
+
+Ju, Y., Ryoo, H.-J., & Suh, S.-H. <br>
+
+<em>Journal of Coaching Development</em>, 2023
+
+</div>
+
+<div class="pub-abstract">
+
+This study examines rookie pitchers in the Korea Baseball Organization
+using machine learning techniques. K-means clustering was applied
+to identify pitcher archetypes and evaluate their relationship
+with early career performance indicators. The results demonstrate
+how data-driven methods can support performance evaluation
+and talent identification in professional sports.
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
 
 </body>
 </html>
