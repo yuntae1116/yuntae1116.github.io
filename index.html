@@ -1,451 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Yuntae Ju | Behavioral Epidemiology and Population Health</title>
-
-<meta
-  name="description"
-  content="Yuntae Ju is a researcher in behavioral epidemiology and population health studying physical activity, cardiometabolic health, chronic disease, and health trajectories using longitudinal and computational methods."
->
-
-<style>
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px;
-  line-height: 1.7;
-  color: #222;
-  background: #fff;
-}
-
-nav {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding: 14px 0;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 40px;
-  z-index: 100;
-}
-
-nav a {
-  margin-right: 18px;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 15px;
-}
-
-nav a:hover {
-  color: #0066cc;
-}
-
-.profile-container {
-  display: flex;
-  align-items: center;
-  gap: 35px;
-  margin-bottom: 45px;
-}
-
-.profile-photo {
-  width: 190px;
-  height: 190px;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 50%;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-}
-
-h1 {
-  margin: 0;
-  font-size: 34px;
-}
-
-.subtitle {
-  color: #555;
-  margin-top: 6px;
-  margin-bottom: 18px;
-  font-size: 18px;
-}
-
-.links a,
-.button {
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 8px 14px;
-  border: 1px solid #333;
-  text-decoration: none;
-  color: #333;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: 0.2s;
-}
-
-.links a:hover,
-.button:hover {
-  background: #333;
-  color: white;
-}
-
-.keywords {
-  font-size: 15px;
-  color: #555;
-  margin-top: 10px;
-  max-width: 760px;
-}
-
-.section {
-  margin-top: 55px;
-}
-
-.section h2 {
-  font-size: 26px;
-  margin-bottom: 16px;
-  border-bottom: 2px solid #eee;
-  padding-bottom: 8px;
-}
-
-.card {
-  padding: 22px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: #fafafa;
-  margin-top: 20px;
-}
-
-.research-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 18px;
-}
-
-.research-item {
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #fafafa;
-  font-weight: bold;
-}
-
-.publication {
-  margin-top: 20px;
-  padding: 22px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: #fafafa;
-}
-
-.publication h3 {
-  margin-top: 0;
-  margin-bottom: 8px;
-  font-size: 21px;
-}
-
-.pub-meta {
-  font-size: 14px;
-  color: #555;
-  margin-bottom: 12px;
-}
-
-.pub-abstract {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-.software-card {
-  display: flex;
-  gap: 25px;
-  padding: 22px;
-  border: 1px solid #ddd;
-  border-radius: 12px;
-  background: #fafafa;
-  margin-top: 20px;
-}
-
-.software-image {
-  width: 300px;
-  height: 190px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  object-fit: contain;
-  background: white;
-}
-
-.software-content h3 {
-  margin-top: 0;
-  font-size: 23px;
-}
-
-.tag {
-  display: inline-block;
-  padding: 4px 9px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  background: #eee;
-  border-radius: 5px;
-  font-size: 13px;
-}
-
-footer {
-  margin-top: 70px;
-  padding-top: 25px;
-  border-top: 1px solid #ddd;
-  color: #666;
-  font-size: 14px;
-}
-
-@media (max-width: 720px) {
-  body {
-    padding: 24px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin-bottom: 8px;
-  }
-
-  .profile-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .software-card {
-    flex-direction: column;
-  }
-
-  .software-image {
-    width: 100%;
-    height: 220px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Yuntae Ju is a researcher studying physical activity epidemiology, cardiometabolic health, and healthy aging, with interests in wearable phenotyping, bioinformatics, and omics.">
+  <title>Yuntae Ju | Physical Activity Epidemiology & Healthy Aging</title>
+  <style>
+    :root {
+      --ink: #172537;
+      --body: #334155;
+      --muted: #64748b;
+      --accent: #176e80;
+      --accent-soft: #edf7f8;
+      --line: #e2e8f0;
+      --surface: #f8fafc;
+      --white: #ffffff;
+      --max-width: 1050px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      color: var(--body);
+      background: var(--white);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:hover { color: #0d4e5e; }
+    a:focus-visible { outline: 3px solid #6bb5c1; outline-offset: 3px; border-radius: 3px; }
+    .wrap { max-width: var(--max-width); padding: 0 28px; margin: 0 auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      min-height: 68px;
+    }
+    .brand { font-size: 17px; font-weight: 750; text-decoration: none; color: var(--ink); white-space: nowrap; }
+    .nav-links { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; }
+    .nav-links a { font-size: 14px; color: var(--body); text-decoration: none; font-weight: 600; }
+    .nav-links a:hover { color: var(--accent); }
+    .hero { padding: 76px 0 57px; border-bottom: 1px solid var(--line); }
+    .hero-inner { display: flex; align-items: center; gap: 48px; }
+    .profile-photo {
+      width: 188px;
+      height: 188px;
+      flex: 0 0 188px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--white);
+      box-shadow: 0 6px 28px rgba(27,48,64,.14);
+      background: var(--surface);
+    }
+    .eyebrow { font-size: 12px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; color: var(--accent); }
+    h1, h2, h3 { color: var(--ink); line-height: 1.3; }
+    h1 { font-size: clamp(36px, 5vw, 49px); margin: 8px 0 13px; letter-spacing: -.035em; }
+    .hero-subtitle { font-size: clamp(18px, 2.3vw, 22px); font-weight: 640; line-height: 1.48; margin: 0 0 14px; color: var(--ink); }
+    .hero-description { max-width: 705px; margin: 0; color: var(--muted); font-size: 15.5px; }
+    .action-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 23px; }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 17px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 650;
+      transition: .18s ease;
+    }
+    .button-primary { background: var(--accent); color: white; border: 1px solid var(--accent); }
+    .button-primary:hover { background: #125b69; color: white; }
+    .button-outline { color: var(--ink); border: 1px solid #bdcbd4; background: white; }
+    .button-outline:hover { background: var(--surface); color: var(--ink); }
+    .focus-strip { padding: 22px 0; border-bottom: 1px solid var(--line); background: #fbfdfd; }
+    .focus-strip-inner { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    .focus-strip strong { font-size: 13px; color: var(--ink); margin-right: 8px; }
+    .chip { display: inline-block; font-size: 12.5px; line-height: 1.3; padding: 7px 11px; border: 1px solid #d4e7e9; border-radius: 100px; color: #285767; background: var(--accent-soft); }
+    section.content-section { padding: 64px 0 0; }
+    .section-heading { margin-bottom: 23px; }
+    .section-heading h2 { font-size: 27px; letter-spacing: -.02em; margin: 0 0 7px; }
+    .section-heading p { margin: 0; font-size: 14px; color: var(--muted); }
+    .prose { max-width: 885px; }
+    .prose p { margin: 0 0 16px; }
+    .prose strong { color: var(--ink); }
+    .research-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .panel { border: 1px solid var(--line); border-radius: 12px; background: var(--white); padding: 23px; }
+    .panel-number { color: var(--accent); font-size: 12px; font-weight: 750; letter-spacing: .09em; }
+    .panel h3 { font-size: 17px; margin: 9px 0 9px; }
+    .panel p { margin: 0; font-size: 14px; }
+    .research-note { margin-top: 19px; background: var(--surface); border-left: 3px solid var(--accent); padding: 18px 22px; border-radius: 0 9px 9px 0; }
+    .research-note h3 { font-size: 15.5px; margin: 0 0 8px; }
+    .research-note p { margin: 0; font-size: 14px; }
+    .project-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 17px; }
+    .project { background: var(--surface); border: 1px solid var(--line); border-radius: 11px; padding: 19px; }
+    .project h3 { font-size: 15.5px; margin: 0 0 9px; }
+    .project p { font-size: 13.5px; margin: 0; }
+    .publication { border: 1px solid var(--line); border-radius: 12px; padding: 23px 25px; margin-top: 18px; }
+    .publication h3 { font-size: 18px; margin: 8px 0 8px; }
+    .publication .citation { font-size: 13.5px; color: var(--muted); margin: 0 0 10px; }
+    .publication p { margin: 0; font-size: 14px; }
+    .status { display: inline-block; color: #185b6b; background: var(--accent-soft); border-radius: 5px; padding: 3px 9px; font-size: 12px; font-weight: 750; }
+    .status-neutral { background: #f1f5f9; color: #475569; }
+    .software-layout { display: flex; align-items: flex-start; gap: 26px; }
+    .software-image { width: 315px; height: 190px; flex-shrink: 0; object-fit: contain; border-radius: 9px; border: 1px solid var(--line); background: var(--white); }
+    .software-layout h3 { font-size: 20px; margin: 0 0 10px; }
+    .software-layout p { margin: 0 0 13px; font-size: 14px; }
+    .tech-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .tech-tags span { font-size: 12px; border-radius: 5px; background: #e9eef2; color: #45566b; padding: 4px 9px; }
+    .contact-panel { background: var(--surface); border-radius: 12px; padding: 27px; border: 1px solid var(--line); }
+    .contact-panel p { margin: 0 0 10px; }
+    footer { color: var(--muted); padding: 48px 0 26px; margin-top: 36px; font-size: 12px; }
+    .footer-rule { border-top: 1px solid var(--line); padding-top: 18px; }
+    @media (max-width: 760px) {
+      .wrap { padding: 0 20px; }
+      .nav-inner { align-items: flex-start; flex-direction: column; padding-top: 14px; padding-bottom: 13px; gap: 9px; }
+      .nav-links { gap: 13px 19px; }
+      .nav-links a { font-size: 12.5px; }
+      .hero { padding: 46px 0 38px; }
+      .hero-inner { align-items: flex-start; flex-direction: column; gap: 23px; }
+      .profile-photo { width: 155px; height: 155px; flex-basis: auto; }
+      .research-grid, .project-grid { grid-template-columns: 1fr; }
+      .software-layout { flex-direction: column; }
+      .software-image { width: 100%; max-width: 420px; }
+      section.content-section { padding-top: 48px; }
+      html { scroll-padding-top: 120px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
 </head>
-
 <body>
-
-<nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#publications">Publications</a>
-  <a href="#software">Software</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-<section id="home">
-  <div class="profile-container">
-    <img src="profile.jpg" class="profile-photo" alt="Profile photo of Yuntae Ju">
-
-    <div>
-      <h1>Yuntae Ju</h1>
-
-      <p class="subtitle">
-        Behavioral Epidemiology and Population Health
-      </p>
-
-      <div class="links">
-        <a href="https://scholar.google.com/citations?hl=en&user=ABHRcfkAAAAJ" target="_blank" rel="noopener noreferrer">
-          Google Scholar
-        </a>
-        <a href="Yuntae_Ju_CV.pdf" target="_blank" rel="noopener noreferrer">
-          CV
-        </a>
+  <header class="site-header">
+    <nav class="wrap nav-inner" aria-label="Main navigation">
+      <a class="brand" href="#home">Yuntae Ju</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
+        <a href="#contact">Contact</a>
       </div>
+    </nav>
+  </header>
 
-      <div class="keywords">
-        <strong>Research interests:</strong>
-        physical activity, behavioral epidemiology, population health,
-        cardiometabolic health, chronic disease, longitudinal analysis,
-        statistical modeling, and machine learning
+  <main>
+    <section id="home" class="hero">
+      <div class="wrap hero-inner">
+        <!-- Keep profile.jpg in the same GitHub Pages folder as index.html. -->
+        <img src="profile.jpg" class="profile-photo" alt="Portrait of Yuntae Ju" width="188" height="188">
+        <div>
+          <div class="eyebrow">Researcher · Yonsei University</div>
+          <h1>Yuntae Ju</h1>
+          <p class="hero-subtitle">Physical Activity Epidemiology<br>Cardiometabolic Health &amp; Healthy Aging</p>
+          <p class="hero-description">
+            I study how patterns of physical activity relate to metabolic and cardiovascular health,
+            physical function, and aging. My work brings together population-based research,
+            quantitative methods, exercise physiology, and bioinformatics.
+          </p>
+          <div class="action-row">
+            <a class="button button-primary" href="#research">Research Interests</a>
+            <a class="button button-outline" href="Yuntae_Ju_CV.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a>
+            <a class="button button-outline" href="https://scholar.google.com/citations?hl=en&amp;user=ABHRcfkAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="focus-strip" aria-label="Research themes">
+      <div class="wrap focus-strip-inner">
+        <strong>Research focus</strong>
+        <span class="chip">Physical Activity &amp; Wearables</span>
+        <span class="chip">Mobility &amp; Physical Function</span>
+        <span class="chip">Cardiometabolic Epidemiology</span>
+        <span class="chip">Healthy Aging</span>
+        <span class="chip">Omics &amp; Bioinformatics</span>
       </div>
     </div>
-  </div>
-</section>
 
-<section id="about" class="section">
-  <h2>About Me</h2>
+    <section id="about" class="wrap content-section">
+      <div class="section-heading"><h2>About Me</h2></div>
+      <div class="prose">
+        <p>
+          I am a researcher trained in <strong>exercise physiology</strong> with a growing focus on
+          <strong>physical activity epidemiology, cardiometabolic health, and healthy aging</strong>.
+          I am interested in understanding why people with different patterns of movement and
+          sedentary behavior experience different health and functional outcomes across adulthood.
+        </p>
+        <p>
+          My epidemiologic research uses population-based datasets and quantitative methods to
+          characterize <strong>heterogeneity in physical activity and health</strong>.
+          In my first-author study accepted by <em>BMC Public Health</em>, I identified distinct
+          physical activity phenotypes using latent class analysis and evaluated their associations
+          with metabolic syndrome among Korean adults.
+        </p>
+        <p>
+          Building on this work, I am particularly interested in <strong>device-measured physical activity,
+          24-hour movement patterns, mobility, and physical function</strong> as indicators of
+          cardiometabolic risk and healthy aging. I hope to combine longitudinal cohort data,
+          physiological measurements, and interpretable statistical methods to study how movement
+          patterns relate to changes in health over time.
+        </p>
+        <p>
+          In parallel, I work as a <strong>bioinformatics researcher at Seoul National University</strong>,
+          analyzing RNA-seq and whole-genome bisulfite sequencing data in a plant epigenetics setting.
+          This work provides hands-on experience in genomic data processing, gene expression analysis,
+          DNA methylation, and reproducible analytical software development.
+        </p>
+        <p>
+          My long-term goal is to integrate <strong>behavioral and wearable-derived phenotypes</strong>
+          with <strong>physiological and molecular biomarkers</strong>—including metabolomic and other
+          omics measures—to investigate biological heterogeneity in cardiometabolic health and aging.
+          I view machine learning and computational biology as complementary tools for asking
+          meaningful epidemiologic questions, not as ends in themselves.
+        </p>
+      </div>
+    </section>
 
-  <p>
-    Hello, my name is <strong>Yuntae Ju</strong>. I am a researcher interested in
-    <strong>behavioral epidemiology and population health</strong>. My work examines how
-    physical activity and related behavioral patterns are associated with cardiometabolic
-    health, chronic disease risk, and differences in health across populations.
-  </p>
+    <section id="research" class="wrap content-section">
+      <div class="section-heading">
+        <h2>Research Interests</h2>
+        <p>Questions and methods connecting movement, physiology, disease risk, and aging.</p>
+      </div>
+      <div class="research-grid">
+        <article class="panel">
+          <div class="panel-number">01 · MOVEMENT</div>
+          <h3>Physical Activity &amp; Wearable Phenotyping</h3>
+          <p>Multidimensional activity patterns, sedentary behavior, accelerometry, and 24-hour movement profiles. I am interested in characterizing person-level differences beyond average activity volume.</p>
+        </article>
+        <article class="panel">
+          <div class="panel-number">02 · AGING</div>
+          <h3>Cardiometabolic Health &amp; Physical Function</h3>
+          <p>Associations of movement and behavioral phenotypes with metabolic risk, cardiovascular health, mobility, and functional aging, with particular interest in longitudinal change.</p>
+        </article>
+        <article class="panel">
+          <div class="panel-number">03 · METHODS</div>
+          <h3>Epidemiologic &amp; Computational Methods</h3>
+          <p>Latent class analysis, survey-weighted regression, longitudinal modeling, interpretable machine learning, and emerging interests in causal inference and bias-aware observational research.</p>
+        </article>
+        <article class="panel">
+          <div class="panel-number">04 · BIOLOGY</div>
+          <h3>Biomarkers, Omics &amp; Bioinformatics</h3>
+          <p>Hands-on RNA-seq and DNA methylation analysis, with a longer-term interest in linking behavioral exposures to physiological and molecular phenotypes of aging and disease.</p>
+        </article>
+      </div>
+      <div class="research-note">
+        <h3>Long-term research direction</h3>
+        <p>Can wearable-derived movement patterns, physiological measurements, and molecular biomarkers jointly identify early changes in functional and cardiometabolic health? How can these signals improve our understanding of heterogeneity in healthy aging?</p>
+      </div>
+    </section>
 
-  <p>
-    A central aim of my research is to identify meaningful heterogeneity that can be hidden
-    by population averages. I study how individuals cluster into distinct behavioral profiles,
-    how health and performance trajectories differ over time, and why some people show
-    unexpected health outcomes relative to their observed behaviors or characteristics.
-  </p>
+    <section id="projects" class="wrap content-section">
+      <div class="section-heading">
+        <h2>Research Experience &amp; Current Work</h2>
+        <p>Completed work and ongoing analyses are presented separately from future interests.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project">
+          <h3>Population-Based Physical Activity Epidemiology</h3>
+          <p>Analyzed physical activity phenotypes and metabolic syndrome using nationally representative Korean health survey data, including latent class reproducibility and survey-weighted association models.</p>
+        </article>
+        <article class="project">
+          <h3>Longitudinal &amp; Machine-Learning Research</h3>
+          <p>Developed statistical and machine-learning approaches to evaluate individual trajectories in longitudinal sports-performance records, including the Athlete Performance Passport framework.</p>
+        </article>
+        <article class="project">
+          <h3>Computational Genomics &amp; Epigenomics</h3>
+          <p>Perform RNA-seq and DNA methylation analyses and develop Python/R-based software for processing, visualization, and interpretation of high-throughput sequencing data.</p>
+        </article>
+      </div>
+    </section>
 
-  <p>
-    My training in exercise physiology provides a biological foundation for interpreting
-    population-level findings. It helps me connect epidemiologic patterns with plausible
-    physiological mechanisms involving metabolism, cardiovascular health, physical function,
-    and human performance.
-  </p>
+    <section id="publications" class="wrap content-section">
+      <div class="section-heading">
+        <h2>Selected Publications &amp; Manuscripts</h2>
+        <p>Selected first-author research relevant to epidemiology and quantitative methods.</p>
+      </div>
+      <article class="publication">
+        <span class="status">Accepted · In production</span>
+        <h3>Physical Activity Phenotypes Identified by Latent Class Analysis and Their Associations with Metabolic Syndrome Among Korean Adults</h3>
+        <p class="citation">Ju, Y., Lee, J., Kim, D.-H., &amp; Suh, S.-H. (2026). <em>BMC Public Health</em>.<br>
+          DOI: <a href="https://doi.org/10.1186/s12889-026-29957-8" target="_blank" rel="noopener noreferrer">10.1186/s12889-026-29957-8</a>
+        </p>
+        <p>Identified four physical activity phenotypes using latent class analysis in a study of 15,370 Korean adults, examined class reproducibility, and estimated associations with metabolic syndrome using survey-weighted models.</p>
+      </article>
+      <article class="publication">
+        <span class="status status-neutral">Manuscript · Under review</span>
+        <h3>Artificial Intelligence-Driven Athlete Performance Passport to Enhance Anti-Doping Strategies in Elite Male Weightlifting</h3>
+        <p class="citation">Ju, Y., Kim, D.-H., &amp; Suh, S.-H. <em>Scientific Reports</em>.</p>
+        <p>Applied longitudinal modeling and machine learning to international competition records to characterize individual performance trajectories and support an explainable, data-driven anti-doping research framework.</p>
+      </article>
+    </section>
 
-  <p>
-    I primarily work with <strong>national health surveys, cohort studies, longitudinal
-    performance records, physiological indicators, and other large population-based
-    datasets</strong>. My current research includes physical activity phenotypes and metabolic
-    syndrome, prediction of physical inactivity, behavioral and biomarker discordance, and
-    longitudinal modeling of health and athletic performance.
-  </p>
+    <section id="software" class="wrap content-section">
+      <div class="section-heading">
+        <h2>Research Software</h2>
+        <p>Computational tools developed for reproducible biological data analysis.</p>
+      </div>
+      <div class="panel software-layout">
+        <!-- Keep ytwgbs_screenshot.PNG in the same GitHub Pages folder as index.html. -->
+        <img class="software-image" src="ytwgbs_screenshot.PNG" alt="MethylDotbogi WGBS analysis software interface" width="315" height="190" loading="lazy">
+        <div>
+          <h3>MethylDotbogi</h3>
+          <p>A Python/R-based graphical tool for whole-genome bisulfite sequencing (WGBS) analysis and visualization, developed to support accessible and reproducible DNA methylation workflows.</p>
+          <p>Features include methylation profiling, candidate region analysis, genomic annotation, gene and transposable-element metaplots, and chromosome-wide visualization.</p>
+          <div class="tech-tags" aria-label="Software technologies">
+            <span>Python</span><span>R</span><span>WGBS</span><span>DNA methylation</span><span>Bioinformatics</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    Methodologically, I use <strong>epidemiologic study design, regression modeling,
-    latent class analysis, longitudinal analysis, statistical learning, machine learning,
-    and explainable artificial intelligence</strong>. I view these methods as tools for
-    answering substantive questions rather than as research endpoints by themselves.
-  </p>
-
-  <p>
-    My long-term goal is to become an independent epidemiologist who uses rigorous and
-    interpretable quantitative methods to understand health behavior, identify populations
-    at elevated risk, and generate evidence that supports healthier lives and chronic
-    disease prevention.
-  </p>
-</section>
-
-<section id="research" class="section">
-  <h2>Research Interests</h2>
-
-  <div class="research-grid">
-    <div class="research-item">🏃 Physical Activity &amp; Sedentary Behavior</div>
-    <div class="research-item">❤️ Cardiometabolic Health &amp; Chronic Disease</div>
-    <div class="research-item">🌍 Behavioral Epidemiology &amp; Population Health</div>
-    <div class="research-item">📈 Longitudinal &amp; Computational Methods</div>
-  </div>
-
-  <div class="card">
-    <strong>Research Questions</strong>
-    <p>
-      How can multidimensional patterns of physical activity be identified at the population
-      level? How are these patterns associated with metabolic and chronic disease outcomes?
-      Which individuals are most likely to remain physically inactive? Why do some individuals
-      show health profiles that differ from what would be expected from their behaviors and
-      clinical characteristics? How can longitudinal and computational methods help reveal
-      meaningful heterogeneity in behavior, health, and performance?
-    </p>
-  </div>
-
-  <div class="card">
-    <strong>Current Projects</strong>
-    <p>
-      Physical activity phenotypes and metabolic syndrome in nationally representative data;
-      prediction of physical inactivity using demographic and behavioral factors; behavioral
-      and biomarker discordance among rural adults; longitudinal health and performance
-      trajectory modeling; AI-supported anti-doping surveillance; and reproducible analytical
-      software for biomedical research.
-    </p>
-  </div>
-</section>
-
-<section id="publications" class="section">
-  <h2>Representative Publications</h2>
-
-  <div class="publication">
-    <h3>
-      Physical Activity Phenotypes Identified by Latent Class Analysis and Their Associations
-      with Metabolic Syndrome Among Korean Adults
-    </h3>
-
-    <div class="pub-meta">
-      Ju, Y., Lee, J., Kim, D.-H., &amp; Suh, S.-H. <br>
-      <em>Submitted to BMC Public Health</em>
-    </div>
-
-    <div class="pub-abstract">
-      This study applied latent class analysis to nationally representative data from Korean
-      adults to identify multidimensional physical activity phenotypes and examine their
-      associations with metabolic syndrome. The findings demonstrate how person-centered
-      epidemiologic approaches can characterize heterogeneity in physical activity and identify
-      population groups with distinct cardiometabolic risk profiles.
-    </div>
-  </div>
-
-  <div class="publication">
-    <h3>
-      Artificial Intelligence-Driven Athlete Performance Passport to Enhance Anti-Doping
-      Strategies in Elite Male Weightlifting
-    </h3>
-
-    <div class="pub-meta">
-      Ju, Y., Kim, D.-H., &amp; Suh, S.-H. <br>
-      <em>Submitted to Sports Medicine-Open</em>
-    </div>
-
-    <div class="pub-abstract">
-      This study developed an Athlete Performance Passport framework using longitudinal
-      international weightlifting competition data. Individual performance trajectories and
-      deviations from expected progression were analyzed using statistical modeling and machine
-      learning to support scalable, explainable, and evidence-based anti-doping surveillance.
-    </div>
-  </div>
-
-</section>
-
-<section id="software" class="section">
-  <h2>Software</h2>
-
-  <div class="software-card">
-    <img src="ytwgbs_screenshot.PNG" class="software-image" alt="YTWGBS software screenshot">
-
-    <div class="software-content">
-      <h3>MethylDotbogi</h3>
-
-      <p>
-        <strong>MethylDotbogi</strong> is graphical user interface software for whole-genome
-        bisulfite sequencing analysis. It is designed to make complex DNA methylation workflows
-        more accessible to biomedical researchers without extensive command-line programming
-        experience.
-      </p>
-
-      <p>
-        The software supports window generation, methylation data preprocessing,
-        methylKit-based differential methylation analysis, candidate region identification,
-        genomic annotation, biological profiling, visualization, and export-ready result tables.
-      </p>
-
-      <p>
-        <span class="tag">Python</span>
-        <span class="tag">R</span>
-        <span class="tag">methylKit</span>
-        <span class="tag">MethylDotbogi</span>
-        <span class="tag">GUI</span>
-        <span class="tag">Bioinformatics</span>
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section">
-  <h2>Contact</h2>
-
-  <p>
-    wndbsxo1116 [at] yonsei.ac.kr
-  </p>
-</section>
-
-<footer>
-  © 2026 Yuntae Ju. All rights reserved.
-</footer>
-
+    <section id="contact" class="wrap content-section">
+      <div class="section-heading"><h2>Contact</h2></div>
+      <div class="contact-panel">
+        <p>For research inquiries or potential collaborations, please feel free to get in touch.</p>
+        <a href="mailto:wndbsxo1116@yonsei.ac.kr">wndbsxo1116@yonsei.ac.kr</a><br>
+        <span style="color:var(--muted); font-size:13px;">Yonsei University · Seoul, South Korea</span>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap footer-rule">© 2026 Yuntae Ju. All rights reserved.</div>
+  </footer>
 </body>
 </html>
