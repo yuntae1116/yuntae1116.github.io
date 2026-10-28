@@ -112,6 +112,10 @@
     .publication p { margin: 0; font-size: 14px; }
     .status { display: inline-block; color: #185b6b; background: var(--accent-soft); border-radius: 5px; padding: 3px 9px; font-size: 12px; font-weight: 750; }
     .status-neutral { background: #f1f5f9; color: #475569; }
+    .publication p + p { margin-top: 9px; }
+    .pub-group-title { font-size: 17px; margin: 27px 0 4px; }
+    .manuscript-heading { margin-top: 35px; }
+    .research-note + .research-note { margin-top: 12px; }
     .software-layout { display: flex; align-items: flex-start; gap: 26px; }
     .software-image { width: 315px; height: 190px; flex-shrink: 0; object-fit: contain; border-radius: 9px; border: 1px solid var(--line); background: var(--white); }
     .software-layout h3 { font-size: 20px; margin: 0 0 10px; }
@@ -148,6 +152,7 @@
         <a href="#research">Research</a>
         <a href="#projects">Projects</a>
         <a href="#publications">Publications</a>
+        <a href="#patents">Patents</a>
         <a href="#software">Software</a>
         <a href="#contact">Contact</a>
       </div>
@@ -166,7 +171,7 @@
           <p class="hero-description">
             I study how patterns of physical activity relate to metabolic and cardiovascular health,
             physical function, and aging. My work brings together population-based research,
-            quantitative methods, exercise physiology, and bioinformatics.
+            longitudinal analysis, exercise physiology, and bioinformatics.
           </p>
           <div class="action-row">
             <a class="button button-primary" href="#research">Research Interests</a>
@@ -194,20 +199,20 @@
         <p>
           I am a researcher trained in <strong>exercise physiology</strong> with a growing focus on
           <strong>physical activity epidemiology, cardiometabolic health, and healthy aging</strong>.
-          I am interested in understanding why people with different patterns of movement and
-          sedentary behavior experience different health and functional outcomes across adulthood.
+          I am interested in how different combinations of movement behaviors
+          and sedentary time relate to health and functional outcomes across adulthood.
         </p>
         <p>
           My epidemiologic research uses population-based datasets and quantitative methods to
           characterize <strong>heterogeneity in physical activity and health</strong>.
-          In my first-author study accepted by <em>BMC Public Health</em>, I identified distinct
+          In my first-author study published in <em>BMC Public Health</em>, I identified distinct
           physical activity phenotypes using latent class analysis and evaluated their associations
           with metabolic syndrome among Korean adults.
         </p>
         <p>
           Building on this work, I am particularly interested in <strong>device-measured physical activity,
           24-hour movement patterns, mobility, and physical function</strong> as indicators of
-          cardiometabolic risk and healthy aging. I hope to combine longitudinal cohort data,
+          cardiometabolic health and healthy aging. I aim to combine longitudinal cohort data,
           physiological measurements, and interpretable statistical methods to study how movement
           patterns relate to changes in health over time.
         </p>
@@ -224,6 +229,10 @@
           I view machine learning and computational biology as complementary tools for asking
           meaningful epidemiologic questions, not as ends in themselves.
         </p>
+      </div>
+      <div class="research-note">
+        <h3>Academic background &amp; research appointments</h3>
+        <p><strong>Yonsei University:</strong> M.S. in Exercise Physiology (expected 2027; GPA 4.30/4.30); B.S. in Physical Education and B.A. in Economics (2023). Currently affiliated with the Department of Physical Education and the Frontier Research Institute of Convergence Sports Science. <strong>Seoul National University:</strong> Bioinformatician, School of Biological Sciences (2026–present). Graduate teaching experience includes Health Education and Exercise Physiology; recipient of a full graduate scholarship at Yonsei University.</p>
       </div>
     </section>
 
@@ -263,42 +272,107 @@
     <section id="projects" class="wrap content-section">
       <div class="section-heading">
         <h2>Research Experience &amp; Current Work</h2>
-        <p>Completed work and ongoing analyses are presented separately from future interests.</p>
+        <p>Completed studies, active analyses, and research development.</p>
       </div>
       <div class="project-grid">
         <article class="project">
           <h3>Population-Based Physical Activity Epidemiology</h3>
-          <p>Analyzed physical activity phenotypes and metabolic syndrome using nationally representative Korean health survey data, including latent class reproducibility and survey-weighted association models.</p>
+          <p>Analyzed 15,370 Korean adults in KNHANES 2022–2024, identifying reproducible activity phenotypes and evaluating metabolic syndrome associations. Current cohort work examines walking behaviors, social context, and cardiometabolic health.</p>
         </article>
         <article class="project">
-          <h3>Longitudinal &amp; Machine-Learning Research</h3>
-          <p>Developed statistical and machine-learning approaches to evaluate individual trajectories in longitudinal sports-performance records, including the Athlete Performance Passport framework.</p>
+          <h3>Longitudinal Modeling &amp; Athlete Performance Passport</h3>
+          <p>Developed recurrent neural network and interpretable machine-learning approaches to model performance trajectories in elite weightlifting and examine applications to anti-doping research.</p>
         </article>
         <article class="project">
           <h3>Computational Genomics &amp; Epigenomics</h3>
-          <p>Perform RNA-seq and DNA methylation analyses and develop Python/R-based software for processing, visualization, and interpretation of high-throughput sequencing data.</p>
+          <p>Analyze RNA-seq and whole-genome bisulfite sequencing data, including differential gene expression, DNA methylation, and gene/transposable-element profiles, using reproducible Python/R workflows.</p>
         </article>
+      </div>
+      <div class="research-note">
+        <h3>Ongoing research directions</h3>
+        <p>Wearable-derived activity and heart-rate measures in relation to cardiorespiratory fitness; longitudinal patient-reported pain and physical function; and a systematic review of device-measured physical activity after built-environment changes. These are ongoing or planned analyses, not published findings.</p>
+      </div>
+      <div class="research-note">
+        <h3>Selected conference presentations</h3>
+        <p><strong>ECSS 2026, Lausanne:</strong> AI-driven Athlete Performance Passport in elite male weightlifting (oral presentation). <strong>Cologne Workshop on Doping Analysis 2026:</strong> Integrating clinical steroid signatures into anti-doping strategies (coauthor). <strong>67th Sports Medicine Conference 2025:</strong> AI-driven Athlete Performance Passport in elite male weightlifting.</p>
       </div>
     </section>
 
     <section id="publications" class="wrap content-section">
       <div class="section-heading">
-        <h2>Selected Publications &amp; Manuscripts</h2>
-        <p>Selected first-author research relevant to epidemiology and quantitative methods.</p>
+        <h2>Publications &amp; Manuscripts</h2>
+        <p>Peer-reviewed publications are listed separately from manuscripts that have not yet been published.</p>
       </div>
+      <h3 class="pub-group-title">Peer-reviewed Publications</h3>
       <article class="publication">
-        <span class="status">Accepted · In production</span>
+        <span class="status">Published · October 2026 · First author</span>
         <h3>Physical Activity Phenotypes Identified by Latent Class Analysis and Their Associations with Metabolic Syndrome Among Korean Adults</h3>
         <p class="citation">Ju, Y., Lee, J., Kim, D.-H., &amp; Suh, S.-H. (2026). <em>BMC Public Health</em>.<br>
           DOI: <a href="https://doi.org/10.1186/s12889-026-29957-8" target="_blank" rel="noopener noreferrer">10.1186/s12889-026-29957-8</a>
         </p>
-        <p>Identified four physical activity phenotypes using latent class analysis in a study of 15,370 Korean adults, examined class reproducibility, and estimated associations with metabolic syndrome using survey-weighted models.</p>
+        <p>Latent class analysis of 15,370 adults in KNHANES 2022–2024 identified four reproducible physical activity phenotypes. Compared with Inactive adults, Active All-rounders had lower odds of metabolic syndrome (adjusted OR 0.63, 95% CI 0.56–0.71).</p>
       </article>
       <article class="publication">
-        <span class="status status-neutral">Manuscript · Under review</span>
-        <h3>Artificial Intelligence-Driven Athlete Performance Passport to Enhance Anti-Doping Strategies in Elite Male Weightlifting</h3>
-        <p class="citation">Ju, Y., Kim, D.-H., &amp; Suh, S.-H. <em>Scientific Reports</em>.</p>
-        <p>Applied longitudinal modeling and machine learning to international competition records to characterize individual performance trajectories and support an explainable, data-driven anti-doping research framework.</p>
+        <span class="status status-neutral">Published · 2026 · Coauthor</span>
+        <h3>A Review of the Effects of Aging and Exercise on Satellite Cells and Sarcopenia</h3>
+        <p class="citation">Kim, Y.-H., Lee, J.-H., Ju, Y., &amp; Suh, S.-H. (2026). <em>Journal of Coaching Development</em>, 28(2), 116–126.<br>
+          DOI: <a href="https://doi.org/10.47684/jcd.2026.02.28.2.116" target="_blank" rel="noopener noreferrer">10.47684/jcd.2026.02.28.2.116</a>
+        </p>
+      </article>
+      <article class="publication">
+        <span class="status status-neutral">Published · 2026 · Coauthor</span>
+        <h3>N-Lactoyl-Phenylalanine (Lac-Phe): Biosynthetic Mechanisms and Exercise Responses—Implications for Anti-Obesity Effects and Exercise-Based Weight Management Interventions</h3>
+        <p class="citation">Lee, J.-H., Kim, Y.-H., Ju, Y., &amp; Suh, S.-H. (2026). <em>Journal of Coaching Development</em>, 28(2), 87–95.<br>
+          DOI: <a href="https://doi.org/10.47684/jcd.2026.02.28.2.87" target="_blank" rel="noopener noreferrer">10.47684/jcd.2026.02.28.2.87</a>
+        </p>
+      </article>
+      <article class="publication">
+        <span class="status status-neutral">Published · 2025 · Coauthor</span>
+        <h3>A Review of Satellite Cell Responses to Exercise and Nutritional Interventions</h3>
+        <p class="citation">Kim, Y.-H., Lee, J.-H., Ju, Y., Oh, M., &amp; Suh, S.-H. (2025). <em>Journal of Coaching Development</em>, 27(10), 299–313.<br>
+          DOI: <a href="https://doi.org/10.47684/jcd.2025.10.27.10.299" target="_blank" rel="noopener noreferrer">10.47684/jcd.2025.10.27.10.299</a>
+        </p>
+      </article>
+      <article class="publication">
+        <span class="status status-neutral">Published · 2025 · Coauthor</span>
+        <h3>Resistance Exercise and Protein Supplementation Strategies to Overcome Anabolic Resistance in Aging Muscle: A Review</h3>
+        <p class="citation">Lee, J.-H., Kim, Y.-H., Ju, Y., Oh, M., &amp; Suh, S.-H. (2025). <em>Journal of Coaching Development</em>, 27(10), 314–328.<br>
+          DOI: <a href="https://doi.org/10.47684/jcd.2025.10.27.10.314" target="_blank" rel="noopener noreferrer">10.47684/jcd.2025.10.27.10.314</a>
+        </p>
+      </article>
+      <article class="publication">
+        <span class="status status-neutral">Published · 2023 · First author</span>
+        <h3>Clustering Rookie Korean Baseball Pitcher and Predicting Potential by Use of Machine Learning</h3>
+        <p class="citation">Ju, Y., Ryoo, H., &amp; Suh, S.-H. (2023). <em>Journal of Coaching Development</em>, 25(2), 190–197.<br>
+          DOI: <a href="https://doi.org/10.47684/jcd.2023.03.25.2.190" target="_blank" rel="noopener noreferrer">10.47684/jcd.2023.03.25.2.190</a>
+        </p>
+      </article>
+      <h3 class="pub-group-title manuscript-heading">Manuscripts in Progress</h3>
+      <article class="publication">
+        <span class="status status-neutral">Under review</span>
+        <h3>Artificial Intelligence-Driven Athlete Performance Passport: A New Informatics Framework for Anti-Doping Intelligence</h3>
+        <p class="citation">Ju, Y., &amp; Suh, S.-H. <em>Drug Testing and Analysis</em> (under review; not published).</p>
+        <p>Examines an informatics-based Athlete Performance Passport approach to supporting anti-doping research.</p>
+      </article>
+      <article class="publication">
+        <span class="status status-neutral">Submitted</span>
+        <h3>Longitudinal Performance Prediction in Elite Male Weightlifters: An Athlete Performance Passport Approach</h3>
+        <p class="citation">Ju, Y., Kim, D.-H., &amp; Suh, S.-H. <em>BMC Sports Science, Medicine and Rehabilitation</em> (submitted; not published).</p>
+        <p>Investigates longitudinal performance modeling and an Athlete Performance Passport framework using elite male weightlifting competition records.</p>
+      </article>
+    </section>
+
+    <!-- Patents is part of THIS page. The menu link #patents scrolls here. -->
+    <section id="patents" class="wrap content-section">
+      <div class="section-heading">
+        <h2>Patents</h2>
+        <p>Intellectual property related to AI-based sports analytics and anti-doping research.</p>
+      </div>
+      <article class="publication">
+        <span class="status">Korean Patent Application · Pending</span>
+        <h3>Method and Apparatus for Determining Doping Using Artificial Intelligence Model</h3>
+        <p class="citation">Korean Patent Application No. <strong>10-2026-0208351</strong> · Filed October 2026 · Republic of Korea</p>
+        <p>This patent application concerns an artificial-intelligence-based method and apparatus for assessing doping status in the context of athlete performance and anti-doping analysis. <strong>Application filed; patent not yet granted.</strong></p>
       </article>
     </section>
 
